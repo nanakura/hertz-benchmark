@@ -18,7 +18,7 @@ package main
 
 import (
 	"context"
-	"github.com/cloudwego/hertz/pkg/network/netpoll"
+	"github.com/cloudwego/netpoll"
 	"time"
 	"unsafe"
 
