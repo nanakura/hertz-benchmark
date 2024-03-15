@@ -25,8 +25,8 @@ import (
 )
 
 const (
-	port        = ":8004"
-	debugPort   = ":18004"
+	port        = "0.0.0.0:8004"
+	debugPort   = "0.0.0.0:18004"
 	actionQuery = "action"
 )
 
