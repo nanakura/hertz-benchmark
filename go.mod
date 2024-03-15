@@ -3,11 +3,12 @@ module github.com/cloudwego/hertz-benchmark
 go 1.16
 
 require (
-	github.com/cloudwego/hertz v0.3.1
-	github.com/cloudwego/netpoll v0.2.6
+	github.com/cloudwego/hertz v0.8.1
+	github.com/cloudwego/netpoll v0.5.0
 	github.com/fasthttp/router v1.4.3
 	github.com/gin-gonic/gin v1.7.7
 	github.com/gofiber/fiber/v2 v2.38.1
+	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/kr/pretty v0.1.0 // indirect
 	github.com/montanaflynn/stats v0.6.6
 	github.com/valyala/fasthttp v1.40.0

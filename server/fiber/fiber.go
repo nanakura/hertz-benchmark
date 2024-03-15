@@ -20,6 +20,7 @@ import (
 	"github.com/cloudwego/hertz-benchmark/perf"
 	"github.com/cloudwego/hertz-benchmark/runner"
 	"github.com/cloudwego/hertz/pkg/common/hlog"
+	"github.com/cloudwego/hertz/pkg/common/json"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -40,7 +41,11 @@ func main() {
 		}
 	}()
 
-	r := fiber.New()
+	cfg := fiber.Config{
+		JSONEncoder: json.Marshal,
+		JSONDecoder: json.Unmarshal,
+	}
+	r := fiber.New(cfg)
 
 	r.Post("/", requestHandler)
 

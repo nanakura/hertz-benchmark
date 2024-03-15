@@ -18,6 +18,7 @@ package main
 
 import (
 	"context"
+	"github.com/cloudwego/hertz/pkg/network/netpoll"
 	"time"
 	"unsafe"
 
@@ -27,7 +28,6 @@ import (
 	"github.com/cloudwego/hertz/pkg/app/server"
 	"github.com/cloudwego/hertz/pkg/common/config"
 	"github.com/cloudwego/hertz/pkg/common/hlog"
-	"github.com/cloudwego/netpoll"
 )
 
 const (
